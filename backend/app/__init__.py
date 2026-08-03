@@ -1,0 +1,1 @@
+"""Course dashboard template backend."""

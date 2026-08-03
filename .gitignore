@@ -1,0 +1,18 @@
+# Dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Local environment files
+frontend/.env.local
+backend/.env
+.env
+.env.local
+
+# Python local state
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db

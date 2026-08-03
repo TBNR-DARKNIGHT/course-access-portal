@@ -1,0 +1,83 @@
+import type { Resource, ResourceProgress } from '../types';
+
+const now = new Date().toISOString();
+
+export const mockResources: Resource[] = [
+  {
+    id: '11111111-1111-1111-1111-111111111111',
+    title: 'Welcome lesson',
+    courseId: 'course-1',
+    type: 'video',
+    topic: 'Getting Started',
+    access: 'public',
+    description: 'A short orientation video for the starter course.',
+    duration: '6 min',
+    contentUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: '22222222-2222-2222-2222-222222222222',
+    title: 'Starter workbook',
+    courseId: 'course-1',
+    type: 'pdf',
+    topic: 'Practice',
+    access: 'public',
+    description: 'A PDF workbook connected to the starter course.',
+    duration: '12 pages',
+    contentUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: '33333333-3333-3333-3333-333333333333',
+    title: 'Advanced strategy briefing',
+    courseId: 'course-2',
+    moduleId: 'module-1',
+    type: 'video',
+    topic: 'Strategy',
+    access: 'paid',
+    description: 'A paid video resource. In production, use a Mux playback ID here.',
+    duration: '18 min',
+    contentUrl: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+    createdAt: now,
+    updatedAt: now,
+  },
+  {
+    id: '44444444-4444-4444-4444-444444444444',
+    title: 'Advanced worksheet',
+    courseId: 'course-2',
+    moduleId: 'module-2',
+    type: 'pdf',
+    topic: 'Practice',
+    access: 'paid',
+    description: 'A paid PDF resource. In production, point bucket and filePath at Supabase Storage.',
+    duration: '20 pages',
+    contentUrl: 'https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf',
+    createdAt: now,
+    updatedAt: now,
+  },
+];
+
+export const mockProgress: ResourceProgress[] = [
+  {
+    resourceId: mockResources[0].id,
+    userId: 'mock-paid-user',
+    status: 'completed',
+    completed: true,
+    progressPercent: 100,
+    completedAt: now,
+    lastAccessedAt: now,
+    completionSource: 'video_ended',
+  },
+  {
+    resourceId: mockResources[1].id,
+    userId: 'mock-paid-user',
+    status: 'in_progress',
+    completed: false,
+    progressPercent: 35,
+    lastAccessedAt: now,
+    pagesViewed: [1, 2, 3, 4],
+    pageCount: 12,
+  },
+];
