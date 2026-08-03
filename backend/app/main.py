@@ -596,7 +596,7 @@ def mint_mux_token(playback_id: str, audience: Literal["v", "t"], expires_in: in
   return token.decode("utf-8") if isinstance(token, bytes) else str(token), exp
 
 
-app = FastAPI(title="Course Dashboard Template API", version="0.1.0")
+app = FastAPI(title="Course Access Portal API", version="0.1.0")
 app.add_middleware(
   CORSMiddleware,
   allow_origins=[settings.frontend_url.rstrip("/")],

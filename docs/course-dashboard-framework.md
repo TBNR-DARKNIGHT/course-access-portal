@@ -1,8 +1,8 @@
-# Course Dashboard Framework
+# Course Access Portal Framework
 
 ## Frontend Structure
 
-The template frontend is dashboard-first. There is no marketing/public page.
+The frontend is dashboard-first. There is no marketing/public page.
 
 Key files:
 
@@ -87,7 +87,7 @@ The paywall is enforced on both sides. The frontend is for experience; the backe
 
 ## Resource Management
 
-The template includes an admin-only resource manager at `#/admin/resources`.
+Course Access Portal includes an admin-only resource manager at `#/admin/resources`.
 
 In mock mode, choose `Admin Preview` on `#/login`. The manager updates the React Query mock resource
 catalog in memory so another developer can test create, edit, delete, paywall, and viewer behavior
@@ -105,7 +105,7 @@ Each resource can be sourced in one of three portable ways:
 - `bucket` and `filePath`: Supabase Storage PDFs, delivered through public or signed URL endpoints
 - `muxPlaybackId`: Mux-hosted videos, with `muxPlaybackSigned` controlling signed playback tokens
 
-This template deliberately keeps binary upload ingestion as an integration point. If a product wants
+Course Access Portal deliberately keeps binary upload ingestion as an integration point. If a product wants
 browser-to-Supabase PDF uploads or Mux direct uploads, add upload-preparation endpoints that create
 signed upload URLs, then reuse the same final `resources` table headings shown in
 `docs/supabase-setup.md`.

@@ -1,1 +1,1 @@
-"""Course dashboard template backend."""
+"""Course Access Portal backend."""

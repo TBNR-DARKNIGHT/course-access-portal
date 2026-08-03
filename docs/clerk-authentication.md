@@ -67,7 +67,7 @@ Only `ADMIN` users can open the live resource manager or call `/api/v1/admin/res
 
 ## Optional Webhook
 
-The minimal template syncs a user on first authenticated API request. A production product can also
+Course Access Portal syncs a user on first authenticated API request. A production product can also
 add a Clerk webhook for `user.created`, `user.updated`, and `user.deleted` to keep Supabase updated
 before the first dashboard request.
 

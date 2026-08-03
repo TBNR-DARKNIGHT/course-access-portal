@@ -1,6 +1,6 @@
 # Supabase Setup
 
-Apply `supabase/course_template_schema.sql` to a new Supabase project. The backend uses the
+Apply `supabase/course_access_portal_schema.sql` to a new Supabase project. The backend uses the
 service-role key, so RLS is enabled but browser policies are intentionally not required for the
 starter. Do not expose the service-role key in the frontend.
 
@@ -137,7 +137,7 @@ course-2/module-1/workbook_thumbnail.jpg
 
 ## Access Code Issuance
 
-From `course-dashboard-template/backend`:
+From `course-access-portal/backend`:
 
 ```powershell
 $env:SUPABASE_URL="https://..."

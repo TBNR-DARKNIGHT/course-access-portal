@@ -6,7 +6,7 @@ FastAPI backend.
 ## Start The Mock Dashboard
 
 ```powershell
-cd course-dashboard-template/frontend
+cd course-access-portal/frontend
 npm install
 npm run dev:mock
 ```
@@ -36,7 +36,7 @@ VITE_API_BASE_URL=
 5. Redeem this mock code:
 
 ```text
-TEMPLATE-ACCESS-2026
+COURSE-ACCESS-2026
 ```
 
 6. Return to `Course 2`; it should now unlock.
