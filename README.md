@@ -69,14 +69,6 @@ Use the mock code `COURSE-ACCESS-2026` on the Settings page to preview access-co
 Choose `Admin Preview` in mock mode to test the resource manager at `#/admin/resources`.
 See `docs/mock-testing.md` for the full click-through.
 
-## Sending To Another Developer
-
-This folder can be copied, zipped, or cloned as a standalone project starter. The receiving developer
-should run `npm install` inside `frontend/` before starting the mock dashboard.
-
-Do not rely on a copied `frontend/node_modules/` or `frontend/dist/` folder. They are generated
-locally and are ignored by the project's `.gitignore`.
-
 ## Product Adaptation Checklist
 
 1. Edit `frontend/src/config/product.ts` for product name, support email, and checkout URL.
